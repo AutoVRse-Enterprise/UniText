@@ -237,6 +237,14 @@ to the following restrictions:
    Files:     Defaults/NotoSans-Regular.ttf
               Defaults/NotoSansArabic-Regular.ttf
               Defaults/NotoSansHebrew-Regular.ttf
+              Defaults/NotoSansBengali-Regular.ttf
+              Defaults/NotoSansGujarati-Regular.ttf
+              Defaults/NotoSansGurmukhi-Regular.ttf
+              Defaults/NotoSansKannada-Regular.ttf
+              Defaults/NotoSansMalayalam-Regular.ttf
+              Defaults/NotoSansOriya-Regular.ttf
+              Defaults/NotoSansTamil-Regular.ttf
+              Defaults/NotoSansTelugu-Regular.ttf
    License:   SIL Open Font License, Version 1.1
    Usage:     Default fallback fonts for Latin, Arabic, and Hebrew scripts
 

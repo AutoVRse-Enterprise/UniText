@@ -400,7 +400,7 @@ namespace LightSide
             set
             {
                 if (Mathf.Approximately(fontSize, value)) return;
-                fontSize = Mathf.Max(1f, value);
+                fontSize = Mathf.Max(0f, value);
                 SetDirty(DirtyFlags.FontSize);
             }
         }
@@ -507,7 +507,7 @@ namespace LightSide
             get => minFontSize;
             set
             {
-                value = Mathf.Max(1f, value);
+                value = Mathf.Max(0f, value);
                 if (Mathf.Approximately(minFontSize, value)) return;
                 minFontSize = value;
                 if (autoSize) SetDirty(DirtyFlags.Layout);
@@ -520,7 +520,7 @@ namespace LightSide
             get => maxFontSize;
             set
             {
-                value = Mathf.Max(1f, value);
+                value = Mathf.Max(0f, value);
                 if (Mathf.Approximately(maxFontSize, value)) return;
                 maxFontSize = value;
                 if (autoSize) SetDirty(DirtyFlags.Layout);
@@ -1061,6 +1061,14 @@ namespace LightSide
                 UniTextDebug.EndSample();
                 return false;
             }
+    #else
+        // Runtime builds lack the editor-only TryInitFontsAndAppearance() fallback.
+        // Guard against null fontStack/appearance to prevent broken FontProvider state.
+        if (fontStack == null || appearance == null)
+        {
+            UniTextDebug.EndSample();
+            return false;
+        }
     #endif
 
             buffers ??= new UniTextBuffers();
