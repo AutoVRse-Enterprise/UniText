@@ -49,7 +49,7 @@ Built on [HarfBuzz](https://harfbuzz.github.io/) — the same shaping engine beh
 2. Click **+** > **Add package from git URL...**
 3. Enter:
    ```
-   https://github.com/LightSideMeowshop/unitext.git#1.0.0
+   https://github.com/AutoVRse-Enterprise/UniText.git#1.0.0
    ```
 
 ## Quick Start
@@ -111,7 +111,7 @@ UniText includes the following open-source libraries in its native plugin. See [
 | **zlib** | Zlib License |
 | **libpng** | PNG Reference Library License |
 
-Default fonts (Noto Sans, Noto Sans Arabic, Noto Sans Hebrew) — [SIL Open Font License v1.1](http://scripts.sil.org/OFL).
+Default fonts (Noto Sans, Noto Sans Arabic, Noto Sans Hebrew, and Indic scripts fallback fonts) — [SIL Open Font License v1.1](http://scripts.sil.org/OFL).
 Thai word segmentation dictionary — derived from ICU, [Unicode License V3](http://www.unicode.org/copyright.html).
 
 </details>
