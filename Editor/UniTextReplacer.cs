@@ -21,7 +21,7 @@ namespace VRseBuilder.Editor.Utils
         private List<TMPItem> foundTMPs = new List<TMPItem>();
         private Vector2 scrollPosition;
 
-        [MenuItem("VRseBuilder/Tools/Replace TextMeshPro with UniText")]
+        [MenuItem("VRseBuilder/Others/Tools/Replace TextMeshPro with UniText", priority = 502)]
         public static void ShowWindow()
         {
             GetWindow<UniTextReplacer>("TMPro to UniText");
